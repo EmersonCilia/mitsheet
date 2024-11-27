@@ -1,0 +1,20 @@
+.col-1{
+    height: 80px;
+    width: 140px;
+}
+.skills-name{
+    width: 160px;
+}
+.tank{
+    background-color: rgba(10, 40, 180, 0.55);
+}
+.healer{
+    background-color: rgba(10, 180, 40, 0.55);
+}
+.dps{
+    background-color: rgba(180, 40, 10, 0.55);
+}
+textarea {
+    font-size: 16px;
+    resize: none;
+}
