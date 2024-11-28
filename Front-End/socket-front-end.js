@@ -1,7 +1,6 @@
 import { updateTab } from './index.js'; // Adjust the path if necessary
 
-const socket = io("http://localhost:3001")
-; // Initialize the socket connection
+const socket = io("http://localhost:3001"); // Initialize the socket connection
 
 
 function emitData(data) {
