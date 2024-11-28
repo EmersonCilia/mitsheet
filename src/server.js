@@ -36,8 +36,8 @@ const server = createServer((req, res) => {
   });
 });
 
-server.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
+server.listen(3001, () => {
+  console.log('Server running on http://localhost:3001');
 });
 
 const io = new socketIo(server);
@@ -54,8 +54,6 @@ io.on('connection', (socket) => {
       const createFile = await collections.insertOne({ name: tabName, text: defaultText });
       const document = { name: tabName, text: defaultText }; // Simulate the newly created document
     }
-  
-    console.log(document)
     if (document){
       tabTextCallback(document.text)
     }
