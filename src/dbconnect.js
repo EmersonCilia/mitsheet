@@ -13,6 +13,4 @@ try{
     console.log(error)
 };
 
-connectDB();
-
 export { collections };
