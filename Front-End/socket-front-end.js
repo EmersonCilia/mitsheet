@@ -1,6 +1,6 @@
 import { updateTab } from './index.js'; // Adjust the path if necessary
 
-const socket = io("wws://mitsheet.onrender.com", {
+const socket = io("https://mitsheet.onrender.com", {
   withCredentials: true}, {
   timeout: 25000, // Set timeout to 25 seconds
 }); // Initialize the socket connection
