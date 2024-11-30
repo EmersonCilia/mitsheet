@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const client = new MongoClient("mongodb+srv://Emersonwpprado:code070596pp@cluster0.dayhe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { useNewUrlParser: true, useUnifiedTopology: true })
+const client = new MongoClient("mongodb+srv://Emersonwpprado:code070596pp@cluster0.dayhe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 let collections;
 
