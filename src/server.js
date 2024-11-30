@@ -44,7 +44,8 @@ server.listen(PORT, () => {
 const io = new socketIo(server, {
   cors: {
     origin: "https://mitsheet.onrender.com", // your frontend URL
-    methods: ["GET", "POST"]
+    methods: ["GET", "POST"],
+    credentials: true
   }
 });
 
