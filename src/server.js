@@ -10,7 +10,7 @@ import "./dbconnect.js"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const PORT = process.env.PORT || 3001; 
+const PORT = process.env.PORT || 10000; 
 
 const server = createServer((req, res) => {
   const filePath = req.url === '/' ? '/index.html' : req.url;
