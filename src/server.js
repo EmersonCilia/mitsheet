@@ -41,7 +41,12 @@ server.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
 
-const io = new socketIo(server);
+const io = new socketIo(server, {
+  cors: {
+    origin: "https://mitsheet.onrender.com", // your frontend URL
+    methods: ["GET", "POST"]
+  }
+});
 
 io.on('connection', (socket) => {
   console.log('A user connected:', socket.id);
