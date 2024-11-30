@@ -1,6 +1,6 @@
 import { updateTab } from './index.js'; // Adjust the path if necessary
 
-const socket = io(); // Initialize the socket connection
+const socket = io("https://backend-mitsheet.onrender.com"); // Initialize the socket connection
 
 
 function emitData(data) {
