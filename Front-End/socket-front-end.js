@@ -2,9 +2,9 @@ import { updateTab } from './index.js'; // Adjust the path if necessary
 
 const socket = io("https://mitsheet.onrender.com", {
   withCredentials: true}, {
-  timeout: 25000, // Set timeout to 25 seconds
+  timeout: 25000 }, // Set timeout to 25 seconds
   { transports: ["websocket"] } 
-}); // Initialize the socket connection
+); // Initialize the socket connection
 
 
 function emitData(data) {
