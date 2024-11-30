@@ -57,7 +57,7 @@ io.on('connection', (socket) => {
   socket.on("select_tab", async (tabName, tabTextCallback) => {
     const document = await findDocument (tabName);
     if (!collections) {
-      return socket.emit("error", "Database connection not established");
+      return console.log("error", "Database connection not established");
     }
     if (!document) {
       // Create a new document if one doesn't exist
