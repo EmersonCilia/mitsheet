@@ -45,7 +45,8 @@ const io = new socketIo(server, {
   cors: {
     origin: "https://mitsheet.onrender.com", // your frontend URL
     methods: ["GET", "POST"],
-    credentials: true
+    credentials: true,
+    transports: ['websocket', 'polling']
   }
 });
 
