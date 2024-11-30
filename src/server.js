@@ -10,7 +10,7 @@ import "./dbconnect.js"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const PORT = process.env.PORT || 10000; 
+const PORT = process.env.PORT || 3001; 
 
 const server = createServer((req, res) => {
   const filePath = req.url === '/' ? '/index.html' : req.url;
@@ -37,13 +37,11 @@ const server = createServer((req, res) => {
   });
 });
 
-
-const io = new socketIo(server, {
-  cors: {
-    origin: "https://mit-spreadsheet.vercel.app", //frontend URL
-    methods: ["GET", "POST"]
-  }
+server.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`);
 });
+
+const io = new socketIo(server);
 
 io.on('connection', (socket) => {
   console.log('A user connected:', socket.id);
