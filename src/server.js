@@ -40,7 +40,12 @@ server.listen(3001, () => {
   console.log('Server running on http://localhost:3001');
 });
 
-const io = new socketIo(server);
+const io = new Server(server, {
+    cors: {
+        origin: "https://mit-spreadsheet.vercel.app",
+        methods: ["GET", "POST"],
+    },
+});
 
 io.on('connection', (socket) => {
   console.log('A user connected:', socket.id);
