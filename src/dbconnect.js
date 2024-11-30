@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const client = new MongoClient("mongodb+srv://Emersonwpprado:code070596pp@cluster0.dayhe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+const client = new MongoClient("mongodb+srv://Emersonwpprado:code070596pp@cluster0.dayhe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { useNewUrlParser: true, useUnifiedTopology: true })
 
 let collections;
 
@@ -11,6 +11,8 @@ try{
     console.log("conectado na db com sucesso")
 }catch(error){
     console.log(error)
-}
+};
+
+connectDB();
 
 export { collections };
