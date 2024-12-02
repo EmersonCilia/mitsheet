@@ -22,6 +22,6 @@ textarea {
     display: flex;
     color: white;
     background-color: #505050;
-    width: 35px;
+    width: fit-content;
     justify-content: center;
 }
