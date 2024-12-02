@@ -8,10 +8,10 @@ const body = document.body;
 temaSwitch.addEventListener("change", () => {
   if (temaSwitch.checked) {
       body.setAttribute("data-bs-theme", "light");
-      temaSwitch.nextElementSibling.textContent = "Modo Escuro";
+      temaSwitch.nextElementSibling.textContent = "Dark mode";
     } else {
       body.setAttribute("data-bs-theme", "dark");
-      temaSwitch.nextElementSibling.textContent = "Modo Claro";
+      temaSwitch.nextElementSibling.textContent = "Light mode";
   }
 });
 
