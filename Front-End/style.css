@@ -18,3 +18,10 @@ textarea {
     font-size: 16px;
     resize: none;
 }
+.timer{
+    display: flex;
+    color: white;
+    background-color: #505050;
+    width: 35px;
+    justify-content: center;
+}
