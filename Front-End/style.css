@@ -18,3 +18,32 @@ textarea {
     font-size: 16px;
     resize: none;
 }
+/* Default Light Mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode .border {
+    border-color: #dee2e6;
+}
+
+body.light-mode .btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .border {
+    border-color: #444444;
+}
+
+body.dark-mode .btn-secondary {
+    background-color: #444444;
+    color: #ffffff;
+}
