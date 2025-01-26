@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
 });
 
 // Emit changes to server when text is updated in any textarea
-textareas.forEach(textarea => {
+/*textareas.forEach(textarea => {
   textarea.addEventListener('keyup', (event) => {
     event.preventDefault();
     const data = {
@@ -32,7 +32,7 @@ textareas.forEach(textarea => {
     };
     emitData(data);
   });
-});
+});*/
         
 // Select the tab to load its content from the database when the page loads
 export function updateTab(id, text) {
